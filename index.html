@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naba digital</title>
+    <link rel="icon" href="img/favicon2.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold
+        }
+            /*cursor: url(img/cursor.png), auto;
+        }
+        
+        /* Barra superior */
+        .barra-superior {
+            height: 76px;
+            background-color: #E9B81D;
+            padding: 0 87px;
+        }
+
+        .logo {
+            width: 113px;
+            height: 28px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+
+        .icono {
+            width: 34px;
+            height: 34px;
+            margin-left: 15px;
+        }
+
+        /* Hero Section */
+        .hero-section img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+        }
+
+        /* Márgenes */
+        .margin-top-40 {
+            margin-top: 15px;
+        }
+
+        .margin-top-130 {
+            margin-top: 40px;
+        }
+
+        .margin-top-90 {
+            margin-top: 90px;
+        }
+
+        /* Títulos de sección */
+        .titulo-seccion {
+            color: #454545;
+            font-family: 'Helvetica black', sans-serif;
+            font-size: 1.5rem;
+            margin-left: 0px;
+        }
+
+        /* Imágenes generales */
+        .img-proyecto, .otros-proyectos img {
+            width: 300px;
+            border-radius: 14px;
+            transition: transform 0.3s ease; /* Animación suave */
+            cursor: pointer; /* Cursor personalizado */
+        }
+
+        .img-fotos {
+            width: 300px;
+            height: 482px;
+            object-fit: cover;
+            margin: 0 12px;
+            border-radius: 14px;
+            transition: transform 0.3s ease; /* Animación suave */
+            cursor: pointer; /* Cursor personalizado */
+        }
+
+        .img-proyecto:hover, .img-fotos:hover, .otros-proyectos img:hover {
+            transform: scale(1.05); /* Efecto zoom */
+        }
+
+        /* Sección "Otros proyectos" */
+        .otros-proyectos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Botón final */
+        .boton-contacto {
+            display: block;
+            width: 500px;
+            height: 80px;
+            background-color: #E9B81D;
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 80px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            margin: 0 auto;
+            border-radius: 14px;
+        }
+
+        .boton-contacto:hover {
+            transform: scale(1.1);
+            background-color: #FF6347;
+        }
+        
+        /* Footer */
+        .footer {
+            height: 76px;
+            background-color: #E9B81D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .logo {
+            width: 32px;
+            height: 25px;
+        }
+
+        .barra-superior {
+            position: fixed;   /* Fija la barra en la parte superior */
+            top: 0;            /* Asegura que quede pegada al borde superior */
+            left: 0;           /* Asegura que cubra toda la parte izquierda */
+            width: 100%;       /* Abarca todo el ancho de la pantalla */
+            z-index: 1000;     /* Se asegura de que la barra quede por encima de otros elementos */
+        } 
+        
+        .boton-juegos {
+            position: fixed;
+            bottom: 20px;
+            left: 50px;
+            background-color: #FF6347;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 25px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            z-index: 1000;
+        }
+
+        .boton-juegos:hover {
+            transform: scale(1.1);
+            background-color: #E94E3D;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Barra Superior -->
+    <nav class="d-flex align-items-center justify-content-between barra-superior">
+        <a href="index.html">
+            <img src="img/logo1.png" alt="Logo" class="logo">  </a>
+        <div class="d-flex align-items-center">
+            <a href="sobremi.html" class="nav-link">SOBRE MÍ</a>
+            <a href="servicios.html" class="nav-link">SERVICIOS</a>
+            <a href="contacto.html" class="nav-link">CONTACTO</a>
+            <a href="https://www.instagram.com/nabadigital" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" class="icono">
+            </a>
+            <a href="https://www.linkedin.com/in/magdalena-balo-984632143/" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn" class="icono">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Margen de 40px -->
+    <div class="margin-top-40"></div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <img src="img/banner1.png" alt="Banner">
+    </div>
+
+    <!-- Margen de 130px -->
+    <div class="margin-top-130"></div>
+
+    <!-- Sección de Trabajos -->
+    <section class="container">
+        <h2 class="titulo-seccion mb-5">Acá podés ver algunos de mis trabajos ▾</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3"><a href="clemen.html"><img src="img/img1.png" alt="Proyecto 1" class="img-proyecto"></a></div>
+            <div class="col-md-3"><a href="moradeco.html"><img src="img/img2.png" alt="Proyecto 2" class="img-proyecto"></a></div>
+            <div class="col-md-3"><a href="lacolgamos.html"><img src="img/img3.png" alt="Proyecto 3" class="img-proyecto"></a></div>
+            <div class="col-md-3"><a href="losvisctonti.html"><img src="img/img4.png" alt="Proyecto 4" class="img-proyecto"></a></div>
+        </div>
+    </section>
+
+    <!-- Margen de 130px -->
+    <div class="margin-top-130"></div>
+
+    <!-- Sección de Otros Proyectos -->
+    <section class="container">
+        <h2 class="titulo-seccion mb-5">Otros proyectos ▾</h2>
+        <div class="otros-proyectos">
+            <!-- 12 imágenes con Lightbox -->
+            <!-- Ejemplo: reemplazá los nombres con los tuyos -->
+            <div><a href="img/otros1.png" data-lightbox="otros"><img src="img/otros1.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros2.png" data-lightbox="otros"><img src="img/otros2.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros3.png" data-lightbox="otros"><img src="img/otros3.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros4.png" data-lightbox="otros"><img src="img/otros4.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros5.png" data-lightbox="otros"><img src="img/otros5.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros6.png" data-lightbox="otros"><img src="img/otros6.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros7.png" data-lightbox="otros"><img src="img/otros7.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros8.png" data-lightbox="otros"><img src="img/otros8.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros9.png" data-lightbox="otros"><img src="img/otros9.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros10.png" data-lightbox="otros"><img src="img/otros10.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros11.png" data-lightbox="otros"><img src="img/otros11.png" alt="Otros 1"></a></div>
+            <div><a href="img/otros12.png" data-lightbox="otros"><img src="img/otros12.png" alt="Otros 1"></a></div>
+            <!-- ...Repetí para las otras imágenes... -->
+        </div>
+    </section>
+
+      <!-- Margen de 130px -->
+    <div class="margin-top-130"></div>
+
+    <!-- Sección de Fotografía con Slider -->
+    <section class="container">
+        <h2 class="titulo-seccion mb-5">Fotografías ▾</h2>
+        <div class="d-flex justify-content-center flex-wrap">
+            <a href="img/foto1.png" data-lightbox="fotos"><img src="img/foto1.png" alt="Foto 1" class="img-fotos"></a>
+            <a href="img/foto2.png" data-lightbox="fotos"><img src="img/foto2.png" alt="Foto 2" class="img-fotos"></a>
+            <a href="img/foto3.png" data-lightbox="fotos"><img src="img/foto3.png" alt="Foto 3" class="img-fotos"></a>
+            <a href="img/foto4.png" data-lightbox="fotos"><img src="img/foto4.png" alt="Foto 4" class="img-fotos"></a>
+        </div>
+    </section>
+
+    <!-- Margen de 90px -->
+    <div class="margin-top-90"></div>
+
+    <!-- Botón Final -->
+    <div class="margin-top-130"></div>
+    <a href="https://wa.link/2le51b" class="boton-contacto">¡Escribime! y trabajemos juntxs ♥</a>
+
+
+    <!-- Margen de 90px -->
+    <div class="margin-top-90"></div>
+
+    <!-- Botón flotante Juegos -->
+    <a href="juegos.html" class="boton-juegos">Y ESSSSSSTO? 🎮</a>
+
+    <!-- Footer -->
+    <footer class="footer margin-top-130">
+        <img src="img/logo2.png" alt="Logo Footer" class="logo">
+    </footer>
+
+    <!-- Enlace a Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>

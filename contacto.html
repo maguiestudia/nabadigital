@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="img/favicon2.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold
+        }
+        
+        /* Barra superior */
+        .barra-superior {
+            height: 76px;
+            background-color: #E9B81D;
+            padding: 0 87px;
+        }
+
+        .logo {
+            width: 113px;
+            height: 28px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+
+        .icono {
+            width: 34px;
+            height: 34px;
+            margin-left: 15px;
+        }
+
+        /* Márgenes */
+        .margin-top-150 {
+            margin-top: 150px;
+        }
+
+        /* Márgenes */
+        .margin-top-90 {
+            margin-top: 90px;
+        }
+
+        /* Sección Hero */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 70px;
+        }
+
+        .hero-logo {
+            width: 600px; /* Ajusta según el tamaño del logo */
+        }
+
+        /* Footer */
+        .footer {
+            height: 76px;
+            background-color: #E9B81D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .logo {
+            width: 32px;
+            height: 25px;
+        }
+
+        .barra-superior {
+            position: fixed;   /* Fija la barra en la parte superior */
+            top: 0;            /* Asegura que quede pegada al borde superior */
+            left: 0;           /* Asegura que cubra toda la parte izquierda */
+            width: 100%;       /* Abarca todo el ancho de la pantalla */
+            z-index: 1000;     /* Se asegura de que la barra quede por encima de otros elementos */
+        }  
+
+        /* Sección Servicios */
+        .servicios-section {
+            margin-top: 100px;
+            text-align: center;
+            color: #454545;
+        }
+
+        .titulo-servicios {
+            font-family: 'PP Monument Extended Black', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .texto-servicios {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .servicios-lista {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .servicio-item {
+            background-color: #f9f9f9;  /* Fondo suave */
+            border-radius: 14px;
+            padding: 25px;
+            width: 100%;
+            max-width: 400px;  /* Ancho de cada tarjeta */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra ligera */
+            text-align: left;
+        }
+
+        .servicio-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .servicio-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #25d366;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128c7e;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Barra Superior -->
+    <nav class="d-flex align-items-center justify-content-between barra-superior">
+        <a href="index.html">
+            <img src="img/logo1.png" alt="Logo" class="logo">  </a>
+        <div class="d-flex align-items-center">
+            <a href="sobremi.html" class="nav-link">SOBRE MÍ</a>
+            <a href="servicios.html" class="nav-link">SERVICIOS</a>
+            <a href="contacto.html" class="nav-link">CONTACTO</a>
+            <a href="https://www.instagram.com/nabadigital" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" class="icono">
+            </a>
+            <a href="https://www.linkedin.com/in/magdalena-balo-984632143/" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn" class="icono">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Márgen superior de 150px -->
+    <div class="margin-top-150"></div>
+
+    <!-- Sección Hero -->
+    <div class="container hero-section">
+        <img src="img/contactologo.png" alt="Logo Proyecto" class="hero-logo">
+    </div>
+
+    <section id="contacto">
+        <div class="container text-center">
+          <p>¿Listx para dar el siguiente paso?</p>
+          <p>Me encantaría escuchar sobre tu proyecto y ver cómo podemos crearlo juntes.</p>
+          
+            <!-- Márgen superior de 90px -->
+            <div class="margin-top-90"></div>
+
+          <a href="https://wa.link/2le51b" class="btn btn-whatsapp">
+            ¡Hablemos por WhatsApp!
+          </a>
+        </div>
+      </section>
+
+    <!-- Márgen superior de 150px -->
+    <div class="margin-top-150"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="img/logo2.png" alt="Logo Footer" class="logo">
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Colgamos x naba</title>
+    <link rel="icon" href="img/favicon2.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold;
+        }
+        
+        /* Barra superior */
+        .barra-superior {
+            height: 76px;
+            background-color: #E9B81D;
+            padding: 0 87px;
+        }
+
+        .logo {
+            width: 113px;
+            height: 28px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+
+        .icono {
+            width: 34px;
+            height: 34px;
+            margin-left: 15px;
+        }
+
+        /* Márgenes */
+        .margin-top-150 {
+            margin-top: 150px;
+        }
+
+        /* Sección Hero */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 90px;
+        }
+
+        .hero-logo {
+            width: 1200px; /* Ajusta según el tamaño del logo */
+        }
+
+        .hero-text {
+            max-width: 500px;
+            font-size: 1.2rem;
+            color: #454545;
+        }
+
+        /* Imágenes del proyecto */
+        .imagen-proyecto {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        .footer {
+            height: 76px;
+            background-color: #E9B81D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .logo {
+            width: 32px;
+            height: 25px;
+        }
+
+        .barra-superior {
+            position: fixed;   /* Fija la barra en la parte superior */
+            top: 0;            /* Asegura que quede pegada al borde superior */
+            left: 0;           /* Asegura que cubra toda la parte izquierda */
+            width: 100%;       /* Abarca todo el ancho de la pantalla */
+            z-index: 1000;     /* Se asegura de que la barra quede por encima de otros elementos */
+        }  
+
+    </style>
+</head>
+<body>
+    <!-- Barra Superior -->
+    <nav class="d-flex align-items-center justify-content-between barra-superior">
+        <a href="index.html">
+            <img src="img/logo1.png" alt="Logo" class="logo">  </a>
+        <div class="d-flex align-items-center">
+            <a href="sobremi.html" class="nav-link">SOBRE MÍ</a>
+            <a href="servicios.html" class="nav-link">SERVICIOS</a>
+            <a href="contacto.html" class="nav-link">CONTACTO</a>
+            <a href="https://www.instagram.com/nabadigital" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" class="icono">
+            </a>
+            <a href="https://www.linkedin.com/in/magdalena-balo-984632143/" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn" class="icono">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Márgen superior de 150px -->
+    <div class="margin-top-150"></div>
+
+    <!-- Sección Hero -->
+    <div class="container hero-section">
+        <img src="img/lclogo+txt.png" alt="Logo Proyecto" class="hero-logo">
+    </div>
+
+    <!-- Imágenes del Proyecto -->
+    <section>
+        <img src="img/lc1.png" alt="Imagen 1" class="imagen-proyecto">
+        <img src="img/lc2.png" alt="Imagen 2" class="imagen-proyecto">
+        <img src="img/lc3.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc4.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc5.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc6.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc7.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc8.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc9.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc9.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc10.png" alt="Imagen 3" class="imagen-proyecto">
+        <img src="img/lc11.png" alt="Imagen 3" class="imagen-proyecto">
+        <!-- Agregá más imágenes según sea necesario -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="img/logo2.png" alt="Logo Footer" class="logo">
+    </footer>
+</body>
+</html>

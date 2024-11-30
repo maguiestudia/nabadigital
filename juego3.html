@@ -1,0 +1,425 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezclando colores</title>
+    <link rel="icon" href="img/favicon2.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold
+        }
+
+        /* Barra superior */
+        .barra-superior {
+            height: 76px;
+            background-color: #E9B81D;
+            padding: 0 87px;
+        }
+
+        .logo {
+            width: 113px;
+            height: 28px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+
+        .icono {
+            width: 34px;
+            height: 34px;
+            margin-left: 15px;
+        }
+
+        /* Márgenes */
+        .margin-top-40 {
+            margin-top: 15px;
+        }
+
+        .margin-top-130 {
+            margin-top: 40px;
+        }
+
+        .margin-top-90 {
+            margin-top: 90px;
+        }
+
+        /* Sección Hero */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* Títulos de sección */
+        .titulo-seccion {
+            color: #454545;
+            font-family: 'Helvetica black', sans-serif;
+            font-size: 1.5rem;
+            margin-left: 0px;
+        }
+
+        /* Botón final */
+        .boton-contacto {
+            display: block;
+            width: 500px;
+            height: 80px;
+            background-color: #E9B81D;
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 80px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            margin: 0 auto;
+            border-radius: 14px;
+        }
+
+        .boton-contacto:hover {
+            transform: scale(1.1);
+            background-color: #FF6347;
+        }
+
+        /* Footer */
+        .footer {
+            height: 76px;
+            background-color: #E9B81D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .logo {
+            width: 32px;
+            height: 25px;
+        }
+
+        .barra-superior {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .game-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            width: 30%;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 30%;
+            gap: 20px;
+        }
+
+        /* Estilos de los juegos */
+        .juego {
+            margin-bottom: 60px;
+            background-color: #f1f1f1; /* Recuadro gris clarito */
+            padding: 60px;
+            border-radius: 24px;
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            cursor: grab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #red { background-color: red; }
+        #blue { background-color: blue; }
+        #yellow { background-color: gold; }
+
+        #drop-zone {
+            width: 300px;
+            height: 300px;
+            border: 4px dashed #ccc;
+            border-radius: 20px;
+            margin: 50px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #555;
+            background-color: #fff;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+
+        .blended {
+            transition: background-color 0.5s ease;
+        }
+
+        .text-center {
+            margin-top: 30px;
+        }
+
+        #reset-btn {
+            margin-top: 20px;
+        }
+
+        .timer {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .stat-container {
+            text-align: left;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra Superior -->
+    <nav class="d-flex align-items-center justify-content-between barra-superior">
+        <a href="index.html">
+            <img src="img/logo1.png" alt="Logo" class="logo">  
+        </a>
+        <div class="d-flex align-items-center">
+            <a href="sobremi.html" class="nav-link">SOBRE MÍ</a>
+            <a href="servicios.html" class="nav-link">SERVICIOS</a>
+            <a href="contacto.html" class="nav-link">CONTACTO</a>
+            <a href="https://www.instagram.com/nabadigital" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" class="icono">
+            </a>
+            <a href="https://www.linkedin.com/in/magdalena-balo-984632143/" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn" class="icono">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Margen de 40px -->
+    <div class="margin-top-40"></div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <img src="img/bannermargen.png" alt="Banner">
+    </div>
+
+    <div class="row">
+        <div class="col text-center">
+              <h2 class="titulo-seccion">Mezclando colores</h2>
+        </div>
+    </div>
+
+    <div class="game-container">
+            <div class="left-column">
+            <div id="red" class="color-box" draggable="true">Rojo</div>
+            <div id="blue" class="color-box" draggable="true">Azul</div>
+            <div id="yellow" class="color-box" draggable="true">Amarillo</div>
+        </div>
+
+        <div id="drop-zone">Soltá acá</div>
+
+        <div class="right-column">
+            <div class="stat-container">
+                <p id="message">Objetivo: Mezcla los colores para obtener Naranja</p>
+                <p>Intentos: <span id="attempts">0</span></p>
+                <p id="score">Puntaje: 0</p>
+                <p id="time">Tiempo restante: 10s</p>
+                <button id="reset-btn" class="btn btn-primary">Resetear Juego</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        const attemptsElement = document.getElementById('attempts');
+        const messageElement = document.getElementById('message');
+        const scoreElement = document.getElementById('score');
+        const timeElement = document.getElementById('time');
+        const resetButton = document.getElementById('reset-btn');
+
+        const colors = {
+            red: 'Rojo',
+            blue: 'Azul',
+            yellow: 'Amarillo'
+        };
+
+        const targetColors = [
+            { color: 'Naranja', mix: ['red', 'yellow'] },
+            { color: 'Morado', mix: ['blue', 'red'] },
+            { color: 'Verde', mix: ['yellow', 'blue'] }
+        ];
+
+        let attempts = 0;
+        let score = 0;
+        let timeLeft = 10;
+        let timer;
+        let selectedColors = [];
+        let currentTarget;
+
+        // Función para iniciar el temporizador
+        function startTimer() {
+            timer = setInterval(() => {
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    timeElement.textContent = `Tiempo restante: ${timeLeft}s`;
+                } else {
+                    clearInterval(timer);
+                    alert('¡Se acabó el tiempo!');
+                }
+            }, 1000);
+        }
+
+        // Función para iniciar el juego
+        function startGame() {
+            attempts = 0;
+            score = 0;
+            selectedColors = [];
+            timeLeft = 10;
+            timeElement.textContent = `Tiempo restante: ${timeLeft}s`;
+            attemptsElement.textContent = attempts;
+            scoreElement.textContent = `Puntaje: ${score}`;
+            currentTarget = getRandomTargetColor();
+            messageElement.textContent = `Objetivo: Mezcla los colores para obtener ${currentTarget.color}`;
+            dropZone.style.backgroundColor = '#fff';
+            dropZone.classList.remove('blended');
+            startTimer();
+        }
+
+        // Función para obtener un color objetivo aleatorio
+        function getRandomTargetColor() {
+            const randomIndex = Math.floor(Math.random() * targetColors.length);
+            return targetColors[randomIndex];
+        }
+
+        // Función para verificar la combinación de colores
+        function checkCombination() {
+            if (currentTarget.mix.every(color => selectedColors.includes(color))) {
+                score += 10;
+                scoreElement.textContent = `Puntaje: ${score}`;
+                messageElement.textContent = `¡Bien hecho! Ahora mezcla otro color.`;
+                dropZone.style.backgroundColor = currentTarget.color;
+                dropZone.classList.add('blended');
+                resetSelectedColors();
+            } else {
+                attempts++;
+                attemptsElement.textContent = attempts;
+                messageElement.textContent = 'Intentalo nuevamente';
+            }
+        }
+
+        // Resetea los colores seleccionados
+        function resetSelectedColors() {
+            selectedColors = [];
+        }
+
+        // Resetea el juego
+        function resetGame() {
+            clearInterval(timer);
+            startGame();
+        }
+
+        // Arrastrar y soltar
+        document.querySelectorAll('.color-box').forEach(box => {
+            box.addEventListener('dragstart', e => {
+                e.dataTransfer.setData('color', e.target.id);
+                e.target.style.transform = 'scale(1.1)';
+            });
+
+            box.addEventListener('dragend', e => {
+                e.target.style.transform = 'scale(1)';
+            });
+        });
+
+        dropZone.addEventListener('dragover', e => {
+            e.preventDefault();
+        });
+
+        dropZone.addEventListener('dragenter', e => {
+            e.preventDefault();
+        });
+
+        dropZone.addEventListener('drop', e => {
+            const color = e.dataTransfer.getData('color');
+            if (!selectedColors.includes(color)) {
+                selectedColors.push(color);
+            }
+            updateDropZoneColor();
+            checkCombination();
+        });
+
+        function updateDropZoneColor() {
+            let newColor = '#fff';
+            if (selectedColors.length === 1) {
+                const firstColor = selectedColors[0];
+                newColor = getColorHex(firstColor);
+            } else if (selectedColors.length === 2) {
+                const firstColor = selectedColors[0];
+                const secondColor = selectedColors[1];
+
+                if (firstColor === 'red' && secondColor === 'yellow' || firstColor === 'yellow' && secondColor === 'red') {
+                    newColor = 'orange';
+                } else if (firstColor === 'blue' && secondColor === 'red' || firstColor === 'red' && secondColor === 'blue') {
+                    newColor = 'purple';
+                } else if (firstColor === 'yellow' && secondColor === 'blue' || firstColor === 'blue' && secondColor === 'yellow') {
+                    newColor = 'green';
+                }
+            }
+
+            dropZone.style.transition = 'background-color 0.5s ease';
+            dropZone.style.backgroundColor = newColor;
+        }
+
+        function getColorHex(color) {
+            switch (color) {
+                case 'red': return 'red';
+                case 'blue': return 'blue';
+                case 'yellow': return 'yellow';
+                default: return '#fff';
+            }
+        }
+
+        resetButton.addEventListener('click', resetGame);
+
+        startGame();
+    </script>
+ 
+    <!-- Botón Final -->
+    <div class="margin-top-130"></div>
+    <a href="juegos.html" class="boton-contacto">Volver a los juegos!</a>
+
+    <!-- Margen de 90px -->
+    <div class="margin-top-90"></div>
+    
+    <!-- Footer -->
+    <footer class="footer margin-top-130">
+        <img src="img/logo2.png" alt="Logo Footer" class="logo">
+    </footer>
+
+
+</body>
+</html>
